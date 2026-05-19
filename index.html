@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>Complex SW СУСТАВЫ — комплекс для здоровья суставов | FMF</title>
+  <meta name="description" content="Complex SW СУСТАВЫ — комплекс из 9 активных компонентов для ежедневной поддержки суставов и хрящевой ткани. 420г / 30 порций." />
+  <meta name="keywords"    content="суставы, хондропротектор, глюкозамин, МСМ, коллаген, Complex SW, FMF" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:title"       content="Complex SW СУСТАВЫ — свобода движения" />
+  <meta property="og:description" content="Комплекс для тех, кто хочет свободно двигаться и заботиться о своих суставах каждый день." />
+  <meta property="og:type"        content="website" />
+
+  <!-- ── Шрифты (preconnect ускоряет загрузку) ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+  <!-- ── Стили проекта ── -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HEADER — навигация
+════════════════════════════════════════════════════════ -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+
+      <div class="logo">
+        <img src="img/logo.webp" alt="FMF" width="64" height="32" />
+      </div>
+
+      <nav class="nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#about">О продукте</a>
+        <a href="#состав">Состав</a>
+        <a href="#comparison">Сравнение</a>
+        <a href="#pricing">Цена</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <button class="btn header__cta"
+              onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Купить сейчас
+      </button>
+
+      <!-- Бургер — виден только на мобильном (управляется через main.js) -->
+      <button class="nav-toggle" id="navToggle"
+              aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+
+<!-- ════════════════════════════════════════════════════════
+     HERO — первый экран
+════════════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+
+      <div class="hero__text fade-in">
+        <div class="hero__label">
+          «Complex SW СУСТАВЫ» — первое для тех, кто хочет двигаться
+        </div>
+        <h1 class="hero__title">Свобода<br>движения</h1>
+        <p class="hero__sub">
+          Комплекс для ежедневной нутритивной поддержки суставов
+          и естественного обновления хрящевой ткани
+        </p>
+        <div class="hero__badge">
+          <span>1 порция = 17 обычных капсул</span>
+          <span>Минимальный сахар</span>
+        </div>
+        <button class="btn"
+                style="background:white;color:var(--blue-dark);"
+                onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Купить сейчас
+        </button>
+        <p class="hero__meta">420г / 30 порций</p>
+      </div>
+
+      <div class="hero__img fade-in">
+        <img src="img/hero.webp"
+             alt="Complex SW СУСТАВЫ"
+             width="280"
+             fetchpriority="high" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     INTRO — описание продукта
+════════════════════════════════════════════════════════ -->
+<section class="intro" id="about">
+  <div class="container">
+    <h2 class="section-title fade-in">
+      Комплекс для тех, кто хочет свободно двигаться<br>
+      и заботиться о своих суставах каждый день
+    </h2>
+
+    <div class="intro__inner">
+
+      <div class="intro__img fade-in">
+        <img src="img/anatomy.webp" alt="Joint anatomy" width="440" loading="lazy" />
+      </div>
+
+      <div class="intro__text fade-in">
+        <p>
+          Комплекс для ежедневной нутритивной поддержки суставов и естественного
+          обновления хрящевой ткани, помогающий сохранять подвижность и комфорт
+          при активном образе жизни.
+        </p>
+        <p>
+          Представьте, что вы каждый день даёте своим суставам «жидкую гибкость»,
+          которая помогает им оставаться активными и здоровыми.
+        </p>
+        <button class="btn">Оставить заявку</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     BENEFITS — преимущества (зигзаг-карточки)
+════════════════════════════════════════════════════════ -->
+<section class="benefits">
+  <div class="container">
+    <div class="benefits__grid">
+
+      <div class="benefit-card benefit-card--1 fade-in">
+        <div class="benefit-card__icon">🔄</div>
+        <h3>Регенерация</h3>
+        <p>Активные компоненты комплекса способствуют естественному восстановлению
+           хрящевой ткани и улучшению синовиальной жидкости.</p>
+      </div>
+
+      <div class="benefit-card benefit-card--2 fade-in">
+        <div class="benefit-card__icon">🏃</div>
+        <h3>Комплексный эффект</h3>
+        <p>Одновременно поддерживает связки, сухожилия и хрящи — всё,
+           что необходимо для здоровья суставного аппарата.</p>
+      </div>
+
+      <div class="benefit-img benefit-img--3 fade-in">
+        <img src="img/product.webp" alt="Complex SW СУСТАВЫ" width="260" loading="lazy" />
+      </div>
+
+      <div class="benefit-card benefit-card--4 fade-in">
+        <div class="benefit-card__icon">📊</div>
+        <h3>Результат</h3>
+        <p>Заметное улучшение подвижности и снижение дискомфорта уже после первого
+           курса при регулярном применении.</p>
+      </div>
+
+      <div class="benefit-card benefit-card--5 fade-in">
+        <div class="benefit-card__icon">🍽️</div>
+        <h3>Питание суставов</h3>
+        <p>Обеспечивает питание хрящевой ткани необходимыми нутриентами:
+           глюкозамин, хондроитин, коллаген и витамины.</p>
+      </div>
+
+      <div class="benefit-card benefit-card--6 fade-in">
+        <div class="benefit-card__icon">⭐</div>
+        <h3>Особенный состав</h3>
+        <p>9 активных компонентов в одной порции — значительно удобнее и эффективнее
+           приёма множества отдельных добавок.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     SLOGAN — слоган и продукт
+════════════════════════════════════════════════════════ -->
+<section class="slogan">
+  <div class="container">
+
+    <div class="slogan__products fade-in">
+      <img src="img/product 2.webp" alt="Complex SW СУСТАВЫ" width="280" loading="lazy" />
+    </div>
+
+    <h2 class="fade-in">Питаем. Восстанавливаем.<br>Сохраняем подвижность.</h2>
+    <p class="fade-in">ЗАО «Complex SW СУСТАВЫ» от Optimaln решает проблемы защиты здоровья суставов</p>
+    <button class="btn fade-in">Купить сейчас</button>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     INGREDIENTS — состав
+════════════════════════════════════════════════════════ -->
+<section class="ingredients" id="состав">
+  <div class="container">
+    <div class="ingredients__inner">
+
+      <div class="ingredients__visual fade-in">
+        <img src="img/ingredients.webp" alt="Powder" loading="lazy" />
+      </div>
+
+      <div class="ingredients__table fade-in">
+        <h2>«Complex SW СУСТАВЫ» — комплекс<br>из 9 активных компонентов</h2>
+        <p>Каждый ингредиент подобран для максимальной поддержки суставов</p>
+
+        <div class="ing-grid">
+          <div class="ing-row"><div>Глюкозамин</div><div>Основа для синтеза хрящевой ткани</div></div>
+          <div class="ing-row"><div>МСМ</div><div>Органическая сера, снижает воспаление</div></div>
+          <div class="ing-row"><div>Коллаген</div><div>Прочность и эластичность хряща</div></div>
+          <div class="ing-row"><div>Хондроитин</div><div>Питание и регенерация суставного хряща</div></div>
+          <div class="ing-row"><div>Осалин</div><div>Поддержка минерализации костей</div></div>
+          <div class="ing-row"><div>Витамин C</div><div>Антиоксидант, участвует в синтезе коллагена</div></div>
+          <div class="ing-row"><div>Витамин B</div><div>Нервная проводимость и восстановление</div></div>
+          <div class="ing-row"><div>Магний</div><div>Мышечная функция и снижение судорог</div></div>
+          <div class="ing-row"><div>Цинк</div><div>Заживление тканей и иммунная поддержка</div></div>
+        </div>
+
+        <br>
+        <button class="btn">Купить сейчас</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     AGE SECTION — аудитория
+════════════════════════════════════════════════════════ -->
+<section class="age-section">
+  <div class="container">
+    <div class="age-section__inner">
+
+      <div class="age-section__text fade-in">
+        <h2>Подходит для всех, кто заботится<br>о своём здоровье и думает о своём<br>будущем заранее.</h2>
+      </div>
+
+      <div class="age-bars fade-in">
+        <div class="age-card">
+          <strong>18+ лет</strong>
+          <span>Поддержка суставов при травмах</span>
+        </div>
+
+        <div class="age-card age-card--active">
+          <strong>35+ лет</strong>
+          <span>Профилактика возрастных изменений</span>
+        </div>
+
+        <div class="age-card">
+          <strong>45+</strong>
+          <span>Сохранение здоровья у женщин</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     COMPARISON — сравнение с конкурентами
+════════════════════════════════════════════════════════ -->
+<section class="comparison" id="comparison">
+  <div class="container">
+    <h2 class="section-title fade-in">Сравнение с другими продуктами</h2>
+
+    <div class="comparison__inner">
+
+      <div class="comparison__text fade-in">
+        <p>В отличие от обычных таблеток и капсул, одна порция Complex SW СУСТАВЫ
+           заменяет сразу 17 обычных капсул. Это значит — меньше пилюль,
+           больше удобства и эффективности.</p>
+        <ul>
+          <li>Удобство: 1 порция вместо 17 капсул</li>
+          <li>Полный комплекс из 9 нутриентов в одном продукте</li>
+          <li>Быстрое усвоение в форме порошка</li>
+          <li>Приятный вкус, легко растворяется в воде</li>
+          <li>Нет лишних наполнителей и красителей</li>
+        </ul>
+        <p style="margin-top:12px;"><strong>1 порция = 17 обычных капсул</strong></p>
+      </div>
+
+      <div class="comparison__visual fade-in">
+        <img src="img/diferent.webp" alt="Complex SW СУСТАВЫ" width="260" loading="lazy" />
+
+        <div class="comparison__course">
+          <h4>Курс на 1 месяц</h4>
+          <p>30 порций для поддержки здоровья суставов</p>
+          <br>
+          <button class="btn" style="font-size:12px;padding:8px 20px;">Купить сейчас</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     PRICING — цена и инструкция
+════════════════════════════════════════════════════════ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title fade-in"
+        style="color:white;margin-bottom:36px;">
+      «Complex SW СУСТАВЫ» для опорно-двигательного аппарата
+    </h2>
+
+    <div class="pricing__inner">
+
+      <div class="pricing__card fade-in">
+        <h3>Complex SW СУСТАВЫ</h3>
+        <img class="pricing__product" src="img/low-1.webp" alt="Complex SW СУСТАВЫ" width="360" loading="lazy" />
+        <div class="pricing__price">3 900 <span>₽</span></div>
+        <ul class="pricing__features">
+          <li>420г / 30 порций</li>
+          <li>9 активных компонентов</li>
+          <li>1 порция = 17 капсул</li>
+          <li>Быстрое усвоение</li>
+          <li>Приятный вкус</li>
+        </ul>
+        <button class="btn" style="background:white;color:var(--blue-dark);width:100%;">
+          Купить сейчас
+        </button>
+      </div>
+
+      <div class="pricing__instructions fade-in">
+        <h3>Инструкция и рекомендации<br>по применению</h3>
+        <img class="pricing__usage" src="img/low-2.webp" alt="Инструкция по применению Complex SW СУСТАВЫ" width="360" loading="lazy" />
+
+        <div class="instruction-step">
+          <div class="step-num">1</div>
+          <p>Отмерьте 1 мерную ложку (14г) порошка</p>
+        </div>
+        <div class="instruction-step">
+          <div class="step-num">2</div>
+          <p>Растворите в 200 мл воды и хорошо перемешайте</p>
+        </div>
+        <div class="instruction-step">
+          <div class="step-num">3</div>
+          <p>Принимайте 1 раз в день, желательно утром во время еды</p>
+        </div>
+        <div class="instruction-step">
+          <div class="step-num">!</div>
+          <p>Курс приёма — не менее 1 месяца.
+             Проконсультируйтесь с врачом перед началом приёма.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FAQ — часто задаваемые вопросы
+════════════════════════════════════════════════════════ -->
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title fade-in">Остались вопросы? Ответы здесь</h2>
+
+    <div class="faq__list">
+
+      <details class="faq-item fade-in">
+        <summary>Можно ли «Complex SW СУСТАВЫ» принимать с другими препаратами?</summary>
+        <p>В большинстве случаев да, однако рекомендуем проконсультироваться
+           с лечащим врачом, особенно если вы принимаете антикоагулянты
+           или другие хондропротекторы.</p>
+      </details>
+
+      <details class="faq-item fade-in">
+        <summary>В каком возрасте начинать?</summary>
+        <p>Комплекс рекомендован с 18 лет. Особенно актуален для людей старше 35 лет,
+           а также спортсменов любого возраста с повышенной нагрузкой на суставы.</p>
+      </details>
+
+      <details class="faq-item fade-in">
+        <summary>Почему в форме порошка, а не капсул?</summary>
+        <p>Порошковая форма обеспечивает более быстрое и полное усвоение,
+           а также позволяет включить значительно большее количество активных
+           веществ — 1 порция равна 17 обычным капсулам.</p>
+      </details>
+
+      <details class="faq-item fade-in">
+        <summary>Какая продолжительность приёма оптимальна?</summary>
+        <p>Рекомендуемый курс — 3 месяца, после чего можно сделать перерыв 1–2 месяца.
+           Для поддерживающего эффекта возможен постоянный приём.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     CONTACT — форма обратной связи
+════════════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title fade-in">Остались вопросы? Напишите нам</h2>
+
+    <div class="contact__inner">
+
+      <div class="contact__info fade-in">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-line">
+          📧 <strong><a href="mailto:info@fmf.ru" style="color:var(--blue-main);">info@fmf.ru</a></strong>
+        </div>
+        <div class="contact-line">📞 <strong>8 (800) 000-00-00</strong></div>
+        <div class="contact-line">📍 <strong>Россия, Москва</strong></div>
+        <div class="contact-line">🕐 Пн–Пт: 9:00–18:00</div>
+
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="VK">
+            <img src="img/logos_vk.webp" alt="" width="32" height="32" loading="lazy" />
+          </a>
+          <a href="#" class="social-link" aria-label="Telegram">
+            <img src="img/logos_telegram.webp" alt="" width="32" height="32" loading="lazy" />
+          </a>
+          <a href="#" class="social-link" aria-label="WhatsApp">
+            <img src="img/logos_wats.webp" alt="" width="32" height="32" loading="lazy" />
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <img src="img/logos_insta.webp" alt="" width="32" height="32" loading="lazy" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Логика формы — в main.js → initContactForm() -->
+      <div class="contact__form fade-in">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text"  placeholder="Ваше имя"  autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email"      autocomplete="email" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="tel"   placeholder="Телефон"    autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <input type="text"  placeholder="Город" />
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Ваш вопрос или комментарий" rows="4"></textarea>
+        </div>
+        <button class="btn" id="submitBtn" style="width:100%;">Отправить сообщение</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="logo footer-logo">
+        <img src="img/logo-footer.webp" alt="FMF" width="78" height="38" loading="lazy" />
+      </div>
+      <p>© 2024 FMF. Complex SW СУСТАВЫ. Все права защищены.</p>
+      <p style="font-size:11px;color:#aaa;">БАД. Не является лекарственным средством.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ── Скрипт подключается в конце body для быстрой загрузки HTML ── -->
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
