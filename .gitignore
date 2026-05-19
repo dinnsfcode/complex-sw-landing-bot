@@ -1,0 +1,14 @@
+.env
+*.env
+
+__pycache__/
+*.py[cod]
+
+*.db
+*.sqlite
+*.sqlite3
+
+.DS_Store
+Thumbs.db
+
+SUBMISSION_NOTES.md
